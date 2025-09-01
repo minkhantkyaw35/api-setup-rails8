@@ -1,0 +1,58 @@
+# Point System Permissions
+point_system:
+  - name: 'view_points'
+    resource: 'points'
+    action: 'read'
+    description: 'View user points and balance'
+    
+  - name: 'award_points'
+    resource: 'points'
+    action: 'award'
+    description: 'Award points to users'
+    
+  - name: 'deduct_points'
+    resource: 'points'
+    action: 'deduct'
+    description: 'Deduct points from users'
+    
+  - name: 'transfer_points'
+    resource: 'points'
+    action: 'transfer'
+    description: 'Transfer points between users'
+    
+  - name: 'view_point_history'
+    resource: 'points'
+    action: 'view_history'
+    description: 'View point transaction history'
+    
+  - name: 'manage_point_rules'
+    resource: 'points'
+    action: 'manage_rules'
+    description: 'Create and modify point earning rules'
+
+# Reward System Permissions  
+reward_system:
+  - name: 'view_rewards'
+    resource: 'rewards'
+    action: 'read'
+    description: 'View available rewards'
+    
+  - name: 'redeem_rewards'
+    resource: 'rewards'
+    action: 'redeem'
+    description: 'Redeem rewards with points'
+    
+  - name: 'create_rewards'
+    resource: 'rewards'
+    action: 'create'
+    description: 'Create new rewards'
+    
+  - name: 'manage_rewards'
+    resource: 'rewards'
+    action: 'manage'
+    description: 'Edit and delete rewards'
+    
+  - name: 'approve_redemptions'
+    resource: 'rewards'
+    action: 'approve_redemptions'
+    description: 'Approve or reject reward redemptions'

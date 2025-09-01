@@ -1,0 +1,65 @@
+# API Access Control
+api_access:
+  - name: 'access_public_api'
+    resource: 'api'
+    action: 'public_access'
+    description: 'Access to public API endpoints'
+    
+  - name: 'access_private_api'
+    resource: 'api'
+    action: 'private_access'
+    description: 'Access to private API endpoints'
+    
+  - name: 'access_admin_api'
+    resource: 'api'
+    action: 'admin_access'
+    description: 'Access to admin API endpoints'
+
+# Content Management (example for future features)
+content_management:
+  - name: 'view_content'
+    resource: 'content'
+    action: 'read'
+    description: 'View content'
+    
+  - name: 'create_content'
+    resource: 'content'
+    action: 'create'
+    description: 'Create new content'
+    
+  - name: 'update_content'
+    resource: 'content'
+    action: 'update'
+    description: 'Update existing content'
+    
+  - name: 'delete_content'
+    resource: 'content'
+    action: 'delete'
+    description: 'Delete content'
+    
+  - name: 'publish_content'
+    resource: 'content'
+    action: 'publish'
+    description: 'Publish content'
+
+# System Administration
+system_admin:
+  - name: 'view_system_logs'
+    resource: 'system'
+    action: 'view_logs'
+    description: 'View system logs'
+    
+  - name: 'manage_system_settings'
+    resource: 'system'
+    action: 'manage_settings'
+    description: 'Manage system-wide settings'
+    
+  - name: 'backup_system'
+    resource: 'system'
+    action: 'backup'
+    description: 'Create system backups'
+    
+  - name: 'maintain_system'
+    resource: 'system'
+    action: 'maintenance'
+    description: 'Perform system maintenance tasks'

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  event_type: MyString
+  event_data: 
+  ip_address: MyString
+  user_agent: MyText
+  occurred_at: 2025-09-01 22:39:50
+
+two:
+  user: two
+  event_type: MyString
+  event_data: 
+  ip_address: MyString
+  user_agent: MyText
+  occurred_at: 2025-09-01 22:39:50

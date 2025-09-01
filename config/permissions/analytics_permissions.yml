@@ -1,0 +1,38 @@
+# Analytics and Reporting Permissions
+analytics:
+  - name: 'view_analytics'
+    resource: 'analytics'
+    action: 'read'
+    description: 'View user analytics and reports'
+    
+  - name: 'export_analytics'
+    resource: 'analytics'
+    action: 'export'
+    description: 'Export analytics data'
+    
+  - name: 'view_system_metrics'
+    resource: 'analytics'
+    action: 'system_metrics'
+    description: 'View system-wide metrics and performance data'
+
+# Device Management
+device_management:
+  - name: 'view_devices'
+    resource: 'device'
+    action: 'read'
+    description: 'View user devices'
+    
+  - name: 'manage_devices'
+    resource: 'device'
+    action: 'manage'
+    description: 'Add/remove user devices'
+    
+  - name: 'configure_device_limits'
+    resource: 'device'
+    action: 'configure_limits'
+    description: 'Set device limits for users'
+    
+  - name: 'force_device_logout'
+    resource: 'device'
+    action: 'force_logout'
+    description: 'Force logout from specific devices'

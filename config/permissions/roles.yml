@@ -1,0 +1,50 @@
+# Role Definitions and Permission Assignments
+roles:
+  super_admin:
+    name: 'super_admin'
+    description: 'Super Administrator with full system access'
+    permissions: 'all'  # Special case - gets all permissions
+    
+  admin:
+    name: 'admin'
+    description: 'Administrator with user management access'
+    permissions:
+      - 'view_users'
+      - 'create_users'
+      - 'update_users'
+      - 'manage_user_roles'
+      - 'view_roles'
+      - 'view_analytics'
+      - 'export_analytics'
+      - 'view_devices'
+      - 'manage_devices'
+      - 'configure_device_limits'
+      - 'force_device_logout'
+      - 'access_admin_api'
+      
+  moderator:
+    name: 'moderator'
+    description: 'Content moderator with limited admin access'
+    permissions:
+      - 'view_users'
+      - 'view_content'
+      - 'update_content'
+      - 'publish_content'
+      - 'view_analytics'
+      - 'access_private_api'
+      
+  user:
+    name: 'user'
+    description: 'Default user role with basic access'
+    permissions:
+      - 'view_content'
+      - 'access_public_api'
+      
+  premium_user:
+    name: 'premium_user'
+    description: 'Premium user with additional features'
+    permissions:
+      - 'view_content'
+      - 'create_content'
+      - 'access_public_api'
+      - 'access_private_api'

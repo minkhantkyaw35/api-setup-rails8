@@ -1,0 +1,69 @@
+# Base Permissions for User Management
+user_management:
+  - name: 'view_users'
+    resource: 'user'
+    action: 'read'
+    description: 'View user information'
+    
+  - name: 'create_users'
+    resource: 'user'
+    action: 'create'
+    description: 'Create new users'
+    
+  - name: 'update_users'
+    resource: 'user'
+    action: 'update'
+    description: 'Update user information'
+    
+  - name: 'delete_users'
+    resource: 'user'
+    action: 'delete'
+    description: 'Delete users'
+    
+  - name: 'manage_user_roles'
+    resource: 'user'
+    action: 'manage_roles'
+    description: 'Assign/remove roles from users'
+
+# Role and Permission Management
+role_management:
+  - name: 'view_roles'
+    resource: 'role'
+    action: 'read'
+    description: 'View roles'
+    
+  - name: 'create_roles'
+    resource: 'role'
+    action: 'create'
+    description: 'Create new roles'
+    
+  - name: 'update_roles'
+    resource: 'role'
+    action: 'update'
+    description: 'Update roles'
+    
+  - name: 'delete_roles'
+    resource: 'role'
+    action: 'delete'
+    description: 'Delete roles'
+
+permission_management:
+  - name: 'view_permissions'
+    resource: 'permission'
+    action: 'read'
+    description: 'View permissions'
+    
+  - name: 'create_permissions'
+    resource: 'permission'
+    action: 'create'
+    description: 'Create new permissions'
+    
+  - name: 'update_permissions'
+    resource: 'permission'
+    action: 'update'
+    description: 'Update permissions'
+    
+  - name: 'delete_permissions'
+    resource: 'permission'
+    action: 'delete'
+    description: 'Delete permissions'

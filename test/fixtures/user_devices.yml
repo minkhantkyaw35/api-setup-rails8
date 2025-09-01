@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  device_name: MyString
+  device_type: MyString
+  device_identifier: MyString
+  last_login_at: 2025-09-01 22:39:38
+  ip_address: MyString
+  user_agent: MyText
+  is_active: false
+
+two:
+  user: two
+  device_name: MyString
+  device_type: MyString
+  device_identifier: MyString
+  last_login_at: 2025-09-01 22:39:38
+  ip_address: MyString
+  user_agent: MyText
+  is_active: false
